@@ -13,7 +13,7 @@ print("For Multiplication  [m]\n")
 print("For Subtraction   [s]\n")
 print("FOR Division  [d]\n")
 print("For Addtion  [a]\n")
-print("\nFor Average  [A]\n")
+print("For Average  [A]\n")
 print("For ALL IN ONR Calculator [ALL]\n\n")
 
 
@@ -21,7 +21,7 @@ while True:
 
     user = input("\n\n\n            ENTER YOUR METHOD  (*_*) = ")
 
-    total = 0
+    total = 1
     count = 0
     if user == 'm':
         while True:
@@ -64,17 +64,26 @@ while True:
 
 
     elif user=='s' :
+        count=0
+
         while True:
             inp = input("\n\n\n           Enter your Number =  ")
+
+            inp2  = input("\n           Type a number = ")
+
             if inp == 'done': break
+            if inp2 =='done': break
             try:
+                z =int(inp2)
                 f =int(inp)
-                total = total - f
-                count = count +1
-                print('DONE =',total)
-                print("total value you Enter = ")
+                ans=f-z
+
+
+                count = count + 1
+                print('      DONE =',ans)
+                print("total value you Enter = ",count)
             except:
-                print('sorry i dont undersatand')
+                print("Sorry i Don't undersatand")
 
 
     elif user=='d':
@@ -130,7 +139,8 @@ while True:
         print('\n\n            Thank You For Using\n')
         break
 
-    else:print('\nPlease Try Again\n ' )
+    else:
+        print('\nPlease Try Again\n ')
 
 
 
